@@ -5,6 +5,8 @@ This is a personal project: Socket programming. This code will receive JSON data
 For a test, the client needs to run the following command in the terminal in order to receive a packet from the server:
 $ nc -u 192.168.x.x 4321  #Your IP address
 
+$ ruby test4.rb
+
 The client-side also may be available by UDPSocket.receive methods. (in work)
 
 * Ruby version
