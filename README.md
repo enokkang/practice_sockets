@@ -1,9 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a personal project: Socket programming. This code will receive JSON data from Ruby on Rails DB through TCP. Then, it will send to the client IP through UDP. This may expand the functionality that transfers data to different platforms.
 
-Things you may want to cover:
+The client needs to run to receive a packet from the server:
+$ nc -u 192.168.x.x 4321  #Your IP address
+
 
 * Ruby version
 
