@@ -11,8 +11,8 @@ $ nc -u 192.168.x.x 4321  #Your IP address
 Server-side
 $ ruby test4.rb
 
+Both Server/Client can send/receive a message by UDPSocket.receive methods.
 
-The client-side also may be available by UDPSocket.receive methods. (in work)
 
 * Ruby version
 
