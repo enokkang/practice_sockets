@@ -14,9 +14,10 @@ $ ruby test4.rb
 
 Both Server/Client can send/receive a message by UDPSocket.receive methods.
 
+Ruby on rails controller:show in work.
 
 * Ruby version
-
+ruby 3.2.2 (2023-03-30 revision e51014f9c0) [arm64-darwin22]
 * System dependencies
 
 * Configuration
