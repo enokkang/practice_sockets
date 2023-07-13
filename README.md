@@ -6,6 +6,7 @@ For a test, the client needs to run the following command in the terminal in ord
 
 Client-side
 $ nc -u 192.168.x.x 4321  #Your IP address
+("The Netcat ( nc ) command is a command-line utility for reading and writing data between two computer networks. The communication happens using either TCP or UDP.")
 
 
 Server-side
