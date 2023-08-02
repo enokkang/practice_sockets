@@ -11,6 +11,6 @@ require ‘socket’
 sock = TCPServer.open(2000)
 con = sock.accept
 msg = con.read
-destFile = File.new(‘README.md’, ‘w’)
+destFile = File.new(‘README2.md’, ‘w’)
 destFile.print msg
 destFile.close

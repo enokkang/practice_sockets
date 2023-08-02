@@ -49,4 +49,14 @@ class ClientsController < ApplicationController
     @clients.all.map(&:destroy)
     redirect_to root_path
   end
+
+  # def receive
+  #   @client = Client.find_by(id: params[:id])
+  #   render :show
+  # end
+
+  # def send
+  #   @client = Client.find_by(id: params[:id])
+  #   render :show
+  # end
 end

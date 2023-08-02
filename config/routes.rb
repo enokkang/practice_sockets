@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get "/clients" => "clients#index"
   get "/clients/new" => "clients#new"
+  get "/receive" => "clients#receive"
+  get "/send" => "clients#send"
   get "/clients/:id" => "clients#show"
 
   post "/clients" => "clients#create"

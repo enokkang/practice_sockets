@@ -1,0 +1,10 @@
+<h1>Sending</h1>
+<%= 
+require ‘socket’
+file = File.new(‘README.md’)
+fileContent = file.read
+sock = TCPSocket.open(‘localhost’, 2000)
+sock.print fileContent
+sock.close
+
+  %>
