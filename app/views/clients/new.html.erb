@@ -1,0 +1,14 @@
+<h1>Signup</h1>
+<%= form_with model: @client do |form| %>
+  <div>
+    <%= form.label :ip %>
+    <%= form.text_field :ip %>
+    <% @client.errors.full_messages_for(:ip).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

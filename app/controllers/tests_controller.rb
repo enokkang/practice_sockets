@@ -6,7 +6,7 @@ class TestsController < ApplicationController
   end
 
   def show
-    @message = Message.find_by[params: ["id"]]
+    @message = Message.find_by[params: "id"]
     render template: "messages/show"
   end
 end
