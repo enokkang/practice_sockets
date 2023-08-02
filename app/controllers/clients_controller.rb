@@ -19,7 +19,8 @@ class ClientsController < ApplicationController
       ip: params[:client][:ip],
     )
     if @client.save
-      render :show
+      #render :show
+      redirect_to root_path, notice: "Client created successfully."
     else
       render json: @client.errors.full_messages, status: 422
     end
@@ -44,8 +45,8 @@ class ClientsController < ApplicationController
   end
 
   def destroy
-    @client = Client.find_by[params: "id"]
-    @client.destroy
-    render json: @client.errors.full_messages, status: 422
+    @clients = Client.all
+    @clients.all.map(&:destroy)
+    redirect_to root_path
   end
 end

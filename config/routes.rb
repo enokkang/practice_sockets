@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   post "/clients" => "clients#create"
 
   patch "/clients/:id" => "clients#update"
-  delete "/clients/:id" => "clients#destroy"
+  delete "/clients/" => "clients#destroy"
 
-  #resources :clients
+  resources :clients
 end

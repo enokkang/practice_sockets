@@ -1,8 +1,17 @@
-<h1>Signup</h1>
+<h1>Register</h1>
+
+<% require "socket"
+
+yourip = Socket.ip_address_list.detect { |intf| intf.ipv4_private? }
+#p ip.ip_address
+%>
+
 <%= form_with model: @client do |form| %>
   <div>
+    Your IP address: <%= yourip.ip_address%><br>
     <%= form.label :ip %>
-    <%= form.text_field :ip %>
+    <%= form.text_field :ip, value:yourip.ip_address %>
+    
     <% @client.errors.full_messages_for(:ip).each do |message| %>
       <div><%= message %></div>
     <% end %>
