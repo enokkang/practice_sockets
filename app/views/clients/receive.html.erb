@@ -1,0 +1,11 @@
+<h1>Receiving</h1>
+
+<% require "socket"
+
+socket = TCPSocket.new("localhost", 8090)
+
+line = socket.gets
+socket.close
+
+%>
+<h2><%= line %></h2>
